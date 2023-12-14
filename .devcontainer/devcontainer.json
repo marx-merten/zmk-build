@@ -11,7 +11,8 @@
     "type=volume,source=zmk-config,target=/workspaces/zmk-config",
     "type=volume,source=zmk-zephyr,target=${containerWorkspaceFolder}/zephyr",
     "type=volume,source=zmk-zephyr-modules,target=${containerWorkspaceFolder}/modules",
-    "type=volume,source=zmk-zephyr-tools,target=${containerWorkspaceFolder}/tools"
+    "type=volume,source=zmk-zephyr-tools,target=${containerWorkspaceFolder}/tools",
+    "source=${localWorkspaceFolder}/..,target=/projects,type=bind,consistency=cached"
   ],
   "customizations": {
     "vscode": {
